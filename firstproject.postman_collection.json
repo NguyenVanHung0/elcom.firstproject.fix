@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "d6191979-069c-4042-b6a3-6e39c3d46ec1",
+		"name": "firstproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18801003"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "getListAuthor",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjcyMTA4MzAwLCJleHAiOjE2NzIxMDgzMDV9.37GCP0_Fw17TM4sjvyQNc5wbiLDl8m0LVNFvhVDEulFspmYhAz0sEFJAu29JTQ0PGtPYgbiyAwQo2fwlReSDLw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": "localhost:8080/author"
+					},
+					"response": []
+				},
+				{
+					"name": "getAuthorById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/author/1776"
+					},
+					"response": []
+				},
+				{
+					"name": "createAuthor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Do My Linh\",\r\n    \"website\": \"linh.com.vn\",\r\n    \"note\": \"chuyen manga\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/author"
+					},
+					"response": []
+				},
+				{
+					"name": "updateAuthor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nguyen Viet Hoang\",\r\n    \"website\": \"hoang.com.vn\",\r\n    \"note\": \"chuyen cuoi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/author/1775"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAuthor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/author/1775"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "getListCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/category"
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoryById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/category/1574"
+					},
+					"response": []
+				},
+				{
+					"name": "createCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"truyen ngu ngon\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/category"
+					},
+					"response": []
+				},
+				{
+					"name": "updateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"aaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/category/1573"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/category/1573"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "getListBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book"
+					},
+					"response": []
+				},
+				{
+					"name": "getBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/8"
+					},
+					"response": []
+				},
+				{
+					"name": "createBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"onepiece\",\r\n    \"nhaXB\": \"Kim dong2\",\r\n    \"namXB\": \"2001\",\r\n    \"firstText\": \"n\",\r\n    \"authorId\": 1774,\r\n    \"categoryId\": 1572\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/book"
+					},
+					"response": []
+				},
+				{
+					"name": "updateBook",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"onepiece2\",\r\n    \"nhaXB\": \"Kim dong\",\r\n    \"namXB\": \"1999\",\r\n    \"firstText\": \"o\",\r\n    \"authorId\": 1773,\r\n    \"categoryId\": 1571\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/book/7"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/book/7"
+					},
+					"response": []
+				},
+				{
+					"name": "countBookGroupByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/count/category"
+					},
+					"response": []
+				},
+				{
+					"name": "countBookGroupByAuthor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/count/author"
+					},
+					"response": []
+				},
+				{
+					"name": "countBookGroupByFirstText",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/count/firsttext"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/book"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"viet\",\r\n    \"password\": \"viet\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"viet\",\r\n    \"role\": \"USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/user"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "createEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nguyen Van A\",\r\n    \"birth_day\": null,\r\n    \"phone\": \"0123456789\",\r\n    \"address\": \"Nam Dinh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/employee"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BorrowLog",
+			"item": [
+				{
+					"name": "createBorrowLog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"viet\",\r\n    \"authorName\": \"Mai Ngọc\",\r\n    \"bookName\": \"naruto\",\r\n    \"categoryBook\": \"Lịch Sử - Chính Trị\",\r\n    \"borrowDate\": \"2023-03-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/borrowlog"
+					},
+					"response": []
+				},
+				{
+					"name": "updateBorrowLog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"long\",\r\n    \"authorName\": \"Do My Linh\",\r\n    \"bookName\": \"naruto\",\r\n    \"categoryBook\": \"truyen manga\",\r\n    \"borrowDate\": \"2023-01-27\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/borrowlog/1"
+					},
+					"response": []
+				},
+				{
+					"name": "countOfBorrowLogWithTime",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateStart\": \"2023-01-01\",\r\n    \"dateEnd\": \"2023-07-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/borrowlog/countborrowlog"
+					},
+					"response": []
+				},
+				{
+					"name": "maxBorrowLogWithTime",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateStart\": \"2023-01-01\",\r\n    \"dateEnd\": \"2023-02-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/borrowlog/maxborrowlog"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rabbitmq",
+			"item": [
+				{
+					"name": "Worker",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"Nguyen Van Hung1\"",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": "localhost:8080/rabbitmq/worker"
+					},
+					"response": []
+				},
+				{
+					"name": "SubPub",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"Nguyen Van Hung2\""
+						},
+						"url": "localhost:8080/rabbitmq/subpub"
+					},
+					"response": []
+				},
+				{
+					"name": "Rpc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Nguyen Van Hung"
+						},
+						"url": "localhost:8080/rabbitmq/rpc"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Elasticsearch",
+			"item": [
+				{
+					"name": "getAllBook",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "naruto1"
+						},
+						"url": "localhost:8080/book/elas"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteIndexElasticsearch",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:9200/book"
+					},
+					"response": []
+				},
+				{
+					"name": "getBookByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/elas/naruto"
+					},
+					"response": []
+				},
+				{
+					"name": "getBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/book/elasid/6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Crawler",
+			"item": [
+				{
+					"name": "CrawlCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/crawl/category"
+					},
+					"response": []
+				},
+				{
+					"name": "CrawlAuthor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/crawl/author"
+					},
+					"response": []
+				},
+				{
+					"name": "CrawlDetailBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/detailbook"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
