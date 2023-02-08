@@ -1,7 +1,7 @@
 
 package com.elcom.management_library_data.mysql.service.imp;
 
-import com.elcom.management_library_api.controller.DetailBookController;
+//import com.elcom.management_library_api.controller.DetailBookController;
 import com.elcom.management_library_data.convert.VNCharacterUtils;
 import com.elcom.management_library_data.mysql.dto.CategoryDto;
 import com.elcom.management_library_data.mysql.repository.DetailBookRepository;
@@ -67,7 +67,7 @@ public class DetailBookServiceImp implements DetailBookService{
                     }
                 }
             } catch (IOException ex) {
-                Logger.getLogger(DetailBookController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DetailBookServiceImp.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         int index = urlBooks.size() / 5;

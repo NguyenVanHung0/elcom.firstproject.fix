@@ -1,7 +1,7 @@
 
 package com.elcom.management_library_data.mysql.service.imp;
 
-import com.elcom.management_library_common.auth.CustomUserDetails;
+import com.elcom.management_library_data.auth.CustomUserDetails;
 import com.elcom.management_library_data.mysql.model.User;
 import com.elcom.management_library_data.mysql.repository.UserRepository;
 import javax.transaction.Transactional;

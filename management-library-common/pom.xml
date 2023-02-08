@@ -6,30 +6,24 @@
         <artifactId>management-library-parent-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <groupId>com.elcom</groupId>
     <artifactId>management-library-common</artifactId>
+    <packaging>jar</packaging>
+    <name>management-library-common</name>
     <build>
         <plugins>
-            <!--            <plugin>
-                <groupId>org.apache.netbeans.utilities</groupId>
-                <artifactId>nbm-maven-plugin</artifactId>
-                <extensions>true</extensions>
-            </plugin>-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.elcom.management_library_api.ManagementLibraryApiApplication</mainClass>
-                    <layout>JAR</layout>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.elcom.management_library_common.ManagementLibraryCommonApplication</mainClass>
+                    
+                </configuration>
             </plugin>
         </plugins>
     </build>
     <dependencies>
-        <dependency>
+        <!--        <dependency>
             <groupId>com.elcom</groupId>
             <artifactId>management-library-data</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -38,7 +32,7 @@
             <groupId>com.elcom</groupId>
             <artifactId>management-library-api</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
@@ -51,5 +45,4 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
 </project>

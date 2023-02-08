@@ -1,10 +1,10 @@
 
 package com.elcom.management_library_api.controller;
 
-import com.elcom.management_library_common.auth.CustomUserDetails;
-import com.elcom.management_library_common.auth.LoginRequest;
-import com.elcom.management_library_common.auth.LoginResponse;
-import com.elcom.management_library_common.auth.jwt.JwtTokenProvider;
+import com.elcom.management_library_data.auth.CustomUserDetails;
+import com.elcom.management_library_data.auth.LoginRequest;
+import com.elcom.management_library_data.auth.LoginResponse;
+import com.elcom.management_library_data.auth.jwt.JwtTokenProvider;
 import com.elcom.management_library_common.exception.ValidationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

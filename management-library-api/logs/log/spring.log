@@ -84,3 +84,5 @@
 04-02-2023 09:46:45.366 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.logException - Resolved [com.elcom.management_library_common.exception.NoSuchElementException: Sach khong ton tai]
 04-02-2023 09:49:16.843 [http-nio-8080-exec-10] INFO  o.s.a.r.l.DirectReplyToMessageListenerContainer.actualStart - Container initialized for queues: [amq.rabbitmq.reply-to]
 04-02-2023 09:49:16.891 [http-nio-8080-exec-10] INFO  o.s.a.r.l.DirectReplyToMessageListenerContainer.doConsumeFromQueue - SimpleConsumer [queue=amq.rabbitmq.reply-to, index=0, consumerTag=amq.ctag-V4C8ld-4s0pyWzS2X4D9ag identity=3f454d1a] started
+04-02-2023 10:11:12.622 [Thread-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1366, SQLState: 22001
+04-02-2023 10:11:12.623 [Thread-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Data truncation: Incorrect string value: '\xF0\x9F\x99\x82\xE2\x80...' for column `firstproject`.`detail_book`.`description` at row 1

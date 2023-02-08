@@ -6,25 +6,19 @@
         <artifactId>management-library-parent-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <groupId>com.elcom</groupId>
     <artifactId>management-library-api</artifactId>
+    <packaging>jar</packaging>
+    <name>management-library-api</name>
     <build>
         <plugins>
             
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.elcom.management_library_api.ManagementLibraryApiApplication</mainClass>
-                        </manifest>
-                    </archive>
+                    <mainClass>com.elcom.management_library_api.ManagementLibraryApiApplication</mainClass>
+                    <layout>jar</layout>
                 </configuration>
             </plugin>
         </plugins>
